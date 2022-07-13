@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+
+  <div class="container">
+
+    <h1>Address Form</h1>
+    <form method="POST" action ="read" th:object="${registerRequest}">
+    <p>Please fill in this form</p>
+    <hr>
+
+    <label for="addressId"><b>Address Id</b></label>
+    <input type="text" placeholder="Enter Address Id" name="addressId" id="addressId" required>
+
+    <label for="flatOrHouseNumber"><b>Flat Or HouseNumber</b></label>
+    <input type="text" placeholder="Enter Flat Or HouseNumber" name="flatOrHouseNumber" id="flatOrHouseNumber" required>
+
+    <label for="buildingName"><b>Building Name</b></label>
+    <input type="text" placeholder="Enter Building Name" name="buildingName" id="buildingName" required>
+    
+     <label for="landmark"><b>Land Mark</b></label>
+    <input type="text" placeholder="Enter Land Mark" name="landmark" id="landmark" required>
+    
+    <label for="village"><b>Village</b></label>
+    <input type="text" placeholder="Enter Village" name="village" id="village" required>
+
+    <label for="taluka"><b>Taluka</b></label>
+    <input type="text" placeholder="Enter Taluka" name="taluka" id="taluka" required>
+
+    <label for="district"><b>District</b></label>
+    <input type="text" placeholder="Enter District" name="district" id="district" required>
+    
+     <label for="state"><b>State</b></label>
+    <input type="text" placeholder="Enter State" name="state" id="state" required>
+    
+     <label for="pincode"><b>Pincode</b></label>
+    <input type="text" placeholder="Enter Pincode" name="pincode" id="pincode" required>
+    
+  
+
+    <button type="submit" class="registerbtn">Continue</button>
+  </div>
+  
+
+</form>
+
+</body>
+</html>

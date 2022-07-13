@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1"/>
+<title>Electricity Bills</title>
+
+</head>
+<body bgcolor="#ADD8E6">
+
+<center>
+<form method="POST" action ="add" th:object="${registerRequest}">
+		<h2> WELCOME TO ELECTRICITY BILL PAGE</h2></br></br>
+		
+		<table id=table1 style="width:50%"  bgcolor="#FFFFFF"  bordercolor="#808080" cellpadding="10">
+		
+		<tr><td>Consumer Profile</td></tr>
+		
+  <tr><td>Name : </br><input type="text" name="Username"/></td></tr>
+   <tr><td>UID / Aadhar Number : </br><input type="text" name="Username"/></td></tr>
+   
+    <tr><td>Consumer Demographic Information</td></tr>
+    
+     <tr><td>Address 1 : </br><input type="text" name="Username"/></td></tr>
+      <tr><td>Address 2  : </br><input type="text" name="Username"/></td></tr>
+       <tr><td>Village/Town/City : </br><input type="text" name="Username"/></td></tr>
+        <tr><td>State : </br><input type="text" name="Username"/></td></tr>
+         <tr><td>Country : </br><input type="text" name="Username"/></td></tr>
+          <tr><td>Landline Number: </br><input type="text" name="Username"/></td></tr>
+     <tr><td>Moblie Number :</br><input type="text" name="Username"/></td></tr>
+       <tr><td>E-mail : </br><input type="text" name="Username"/></td></tr>
+          <tr><td>Verification OPT :</br> <input type="text" name="Username"/></td></tr>
+<tr><td><center><input type="submit" value="SUBMIT"/></center></td></tr>
+</table>
+		</center>
+</body>
+</html>
